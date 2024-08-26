@@ -1,0 +1,1133 @@
+let main = [
+  {
+    id: 1,
+    parentId: null,
+    title: "10th Grade Completion",
+    description: "Choose your next major stream after completing 10th grade",
+    avgSalary: null,
+    totalLearners: null,
+  },
+
+  {
+    id: 11,
+    parentId: 1,
+    title: "Science",
+    description: "Explore career paths in the Science stream",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 111,
+    parentId: 11,
+    title: "Medical (Biology Group)",
+    description: "Specializations in medical fields",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 1111,
+    parentId: 111,
+    title: "MBBS",
+    description: "Bachelor of Medicine, Bachelor of Surgery",
+    avgSalary: 40,
+    totalLearners: 500,
+  },
+  {
+    id: 11111,
+    parentId: 1111,
+    title: "General Physician",
+    description: "Specialize as a General Physician after MBBS",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 11112,
+    parentId: 1111,
+    title: "Cardiologist",
+    description: "Specialize as a Cardiologist after MBBS",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 11113,
+    parentId: 1111,
+    title: "Neurologist",
+    description: "Specialize as a Neurologist after MBBS",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+  {
+    id: 11114,
+    parentId: 1111,
+    title: "Pediatrician",
+    description: "Specialize as a Pediatrician after MBBS",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 11115,
+    parentId: 1111,
+    title: "Surgeon",
+    description: "Specialize as a Surgeon after MBBS",
+    avgSalary: 40,
+    totalLearners: 120,
+  },
+
+  {
+    id: 1112,
+    parentId: 111,
+    title: "BDS",
+    description: "Bachelor of Dental Surgery",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 11121,
+    parentId: 1112,
+    title: "Orthodontist",
+    description: "Specialize as an Orthodontist after BDS",
+    avgSalary: 40,
+    totalLearners: 80,
+  },
+  {
+    id: 11122,
+    parentId: 1112,
+    title: "Prosthodontist",
+    description: "Specialize as a Prosthodontist after BDS",
+    avgSalary: 40,
+    totalLearners: 70,
+  },
+  {
+    id: 11123,
+    parentId: 1112,
+    title: "Endodontist",
+    description: "Specialize as an Endodontist after BDS",
+    avgSalary: 40,
+    totalLearners: 60,
+  },
+
+  {
+    id: 1113,
+    parentId: 111,
+    title: "B.Sc. Nursing",
+    description: "Bachelor of Science in Nursing",
+    avgSalary: 40,
+    totalLearners: 500,
+  },
+  {
+    id: 11131,
+    parentId: 1113,
+    title: "Nurse Practitioner",
+    description: "Specialize as a Nurse Practitioner after B.Sc. Nursing",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 11132,
+    parentId: 1113,
+    title: "Clinical Nurse Specialist",
+    description:
+      "Specialize as a Clinical Nurse Specialist after B.Sc. Nursing",
+    avgSalary: 40,
+    totalLearners: 250,
+  },
+
+  {
+    id: 1114,
+    parentId: 111,
+    title: "Pharmacy",
+    description: "Pharmacy courses leading to M.Pharm",
+    avgSalary: 40,
+    totalLearners: 400,
+  },
+  {
+    id: 11141,
+    parentId: 1114,
+    title: "Pharmacologist",
+    description: "Specialize as a Pharmacologist",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 11142,
+    parentId: 1114,
+    title: "Clinical Researcher",
+    description: "Specialize as a Clinical Researcher",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 11143,
+    parentId: 1114,
+    title: "Drug Development",
+    description: "Specialize in Drug Development",
+    avgSalary: 40,
+    totalLearners: 170,
+  },
+
+  {
+    id: 1115,
+    parentId: 111,
+    title: "Allied Health Sciences",
+    description: "Various allied health science courses",
+    avgSalary: 40,
+    totalLearners: 350,
+  },
+  {
+    id: 11151,
+    parentId: 1115,
+    title: "Physiotherapy",
+    description: "Specialize in Physiotherapy",
+    avgSalary: 40,
+    totalLearners: 220,
+  },
+  {
+    id: 11152,
+    parentId: 1115,
+    title: "Occupational Therapy",
+    description: "Specialize in Occupational Therapy",
+    avgSalary: 40,
+    totalLearners: 180,
+  },
+  {
+    id: 11153,
+    parentId: 1115,
+    title: "Medical Lab Technology",
+    description: "Specialize in Medical Lab Technology",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 11154,
+    parentId: 1115,
+    title: "Radiology",
+    description: "Specialize in Radiology",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+
+  {
+    id: 112,
+    parentId: 11,
+    title: "Engineering (Maths Group)",
+    description: "Engineering courses and specializations",
+    avgSalary: 40,
+    totalLearners: null,
+  },
+  {
+    id: 1121,
+    parentId: 112,
+    title: "B.E/B.Tech",
+    description: "Bachelor of Engineering/Bachelor of Technology",
+    avgSalary: 40,
+    totalLearners: 800,
+  },
+  {
+    id: 11211,
+    parentId: 1121,
+    title: "Computer Science",
+    description: "Specializations in Computer Science",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 112111,
+    parentId: 11211,
+    title: "Software Development",
+    description: "Career paths in Software Development",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 112112,
+    parentId: 11211,
+    title: "Data Science",
+    description: "Career paths in Data Science",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+
+  {
+    id: 11212,
+    parentId: 1121,
+    title: "Mechanical Engineering",
+    description: "Specializations in Mechanical Engineering",
+    avgSalary: 40,
+    totalLearners: 250,
+  },
+  {
+    id: 112121,
+    parentId: 11212,
+    title: "Robotics",
+    description: "Career paths in Robotics",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+  {
+    id: 112122,
+    parentId: 11212,
+    title: "Automotive Engineering",
+    description: "Career paths in Automotive Engineering",
+    avgSalary: 40,
+    totalLearners: 120,
+  },
+
+  {
+    id: 11213,
+    parentId: 1121,
+    title: "Electrical Engineering",
+    description: "Specializations in Electrical Engineering",
+    avgSalary: 40,
+    totalLearners: 220,
+  },
+  {
+    id: 112131,
+    parentId: 11213,
+    title: "Renewable Energy",
+    description: "Career paths in Renewable Energy",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 112132,
+    parentId: 11213,
+    title: "Power Systems",
+    description: "Career paths in Power Systems",
+    avgSalary: 40,
+    totalLearners: 130,
+  },
+
+  {
+    id: 11214,
+    parentId: 1121,
+    title: "Civil Engineering",
+    description: "Specializations in Civil Engineering",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 112141,
+    parentId: 11214,
+    title: "Structural Engineering",
+    description: "Career paths in Structural Engineering",
+    avgSalary: 40,
+    totalLearners: 110,
+  },
+  {
+    id: 112142,
+    parentId: 11214,
+    title: "Urban Planning",
+    description: "Career paths in Urban Planning",
+    avgSalary: 40,
+    totalLearners: 90,
+  },
+
+  {
+    id: 1122,
+    parentId: 112,
+    title: "B.Arch",
+    description: "Bachelor of Architecture",
+    avgSalary: 40,
+    totalLearners: 180,
+  },
+  {
+    id: 11221,
+    parentId: 1122,
+    title: "Interior Design",
+    description: "Specializations in Interior Design",
+    avgSalary: 40,
+    totalLearners: 120,
+  },
+  {
+    id: 11222,
+    parentId: 1122,
+    title: "Landscape Architecture",
+    description: "Specializations in Landscape Architecture",
+    avgSalary: 40,
+    totalLearners: 80,
+  },
+  {
+    id: 11223,
+    parentId: 1122,
+    title: "Urban Design",
+    description: "Specializations in Urban Design",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+
+  {
+    id: 12,
+    parentId: 1,
+    title: "Commerce",
+    description: "Explore career paths in the Commerce stream",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 121,
+    parentId: 12,
+    title: "B.Com",
+    description: "Bachelor of Commerce",
+    avgSalary: 40,
+    totalLearners: 500,
+  },
+  {
+    id: 1211,
+    parentId: 121,
+    title: "Chartered Accountant (CA)",
+    description: "Career paths as a Chartered Accountant",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 1212,
+    parentId: 121,
+    title: "Company Secretary (CS)",
+    description: "Career paths as a Company Secretary",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 1213,
+    parentId: 121,
+    title: "Cost and Management Accountant (CMA)",
+    description: "Career paths as a Cost and Management Accountant",
+    avgSalary: 40,
+    totalLearners: 250,
+  },
+
+  {
+    id: 122,
+    parentId: 12,
+    title: "BBA",
+    description: "Bachelor of Business Administration",
+    avgSalary: 40,
+    totalLearners: 450,
+  },
+  {
+    id: 1221,
+    parentId: 122,
+    title: "Marketing",
+    description: "Specializations in Marketing",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 1222,
+    parentId: 122,
+    title: "Finance",
+    description: "Specializations in Finance",
+    avgSalary: 40,
+    totalLearners: 180,
+  },
+  {
+    id: 1223,
+    parentId: 122,
+    title: "Human Resources",
+    description: "Specializations in Human Resources",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 1224,
+    parentId: 122,
+    title: "Operations Management",
+    description: "Specializations in Operations Management",
+    avgSalary: 40,
+    totalLearners: 170,
+  },
+
+  {
+    id: 123,
+    parentId: 12,
+    title: "Economics",
+    description: "Bachelor of Economics",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 1231,
+    parentId: 123,
+    title: "Economist",
+    description: "Career paths as an Economist",
+    avgSalary: 40,
+    totalLearners: 120,
+  },
+  {
+    id: 1232,
+    parentId: 123,
+    title: "Data Analyst",
+    description: "Career paths as a Data Analyst",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 1233,
+    parentId: 123,
+    title: "Financial Analyst",
+    description: "Career paths as a Financial Analyst",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+
+  {
+    id: 13,
+    parentId: 1,
+    title: "Arts & Humanities",
+    description: "Explore career paths in Arts & Humanities",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 131,
+    parentId: 13,
+    title: "B.A. in History",
+    description: "Bachelor of Arts in History",
+    avgSalary: 40,
+    totalLearners: 250,
+  },
+  {
+    id: 1311,
+    parentId: 131,
+    title: "Historian",
+    description: "Career paths as a Historian",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+  {
+    id: 1312,
+    parentId: 131,
+    title: "Archaeologist",
+    description: "Career paths as an Archaeologist",
+    avgSalary: 40,
+    totalLearners: 80,
+  },
+  {
+    id: 1313,
+    parentId: 131,
+    title: "Museum Curator",
+    description: "Career paths as a Museum Curator",
+    avgSalary: 40,
+    totalLearners: 70,
+  },
+
+  {
+    id: 132,
+    parentId: 13,
+    title: "B.A. in Sociology",
+    description: "Bachelor of Arts in Sociology",
+    avgSalary: 40,
+    totalLearners: 220,
+  },
+  {
+    id: 1321,
+    parentId: 132,
+    title: "Sociologist",
+    description: "Career paths as a Sociologist",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 1322,
+    parentId: 132,
+    title: "Social Worker",
+    description: "Career paths as a Social Worker",
+    avgSalary: 40,
+    totalLearners: 200,
+  },
+  {
+    id: 1323,
+    parentId: 132,
+    title: "Community Development Worker",
+    description: "Career paths as a Community Development Worker",
+    avgSalary: 40,
+    totalLearners: 180,
+  },
+
+  {
+    id: 133,
+    parentId: 13,
+    title: "B.A. in Political Science",
+    description: "Bachelor of Arts in Political Science",
+    avgSalary: 40,
+    totalLearners: 230,
+  },
+  {
+    id: 1331,
+    parentId: 133,
+    title: "Political Analyst",
+    description: "Career paths as a Political Analyst",
+    avgSalary: 40,
+    totalLearners: 150,
+  },
+  {
+    id: 1332,
+    parentId: 133,
+    title: "Public Relations Officer",
+    description: "Career paths as a Public Relations Officer",
+    avgSalary: 40,
+    totalLearners: 120,
+  },
+  {
+    id: 1333,
+    parentId: 133,
+    title: "Policy Analyst",
+    description: "Career paths as a Policy Analyst",
+    avgSalary: 40,
+    totalLearners: 100,
+  },
+
+  {
+    id: 14,
+    parentId: 1,
+    title: "Vocational Courses",
+    description: "Explore career paths through vocational courses",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 141,
+    parentId: 14,
+    title: "ITI (Industrial Training Institute)",
+    description: "Various trades offered by ITIs",
+    avgSalary: 40,
+    totalLearners: 300,
+  },
+  {
+    id: 1411,
+    parentId: 141,
+    title: "Electrician",
+    description: "Career paths as an Electrician",
+    avgSalary: 20,
+    totalLearners: 120,
+  },
+  {
+    id: 1412,
+    parentId: 141,
+    title: "Plumber",
+    description: "Career paths as a Plumber",
+    avgSalary: 20,
+    totalLearners: 100,
+  },
+  {
+    id: 1413,
+    parentId: 141,
+    title: "Fitter",
+    description: "Career paths as a Fitter",
+    avgSalary: 20,
+    totalLearners: 80,
+  },
+
+  {
+    id: 142,
+    parentId: 14,
+    title: "Diploma Courses",
+    description: "Various diploma courses in different fields",
+    avgSalary: 20,
+    totalLearners: 280,
+  },
+  {
+    id: 1421,
+    parentId: 142,
+    title: "Diploma in Computer Science",
+    description: "Career paths with a Diploma in Computer Science",
+    avgSalary: 20,
+    totalLearners: 200,
+  },
+  {
+    id: 1422,
+    parentId: 142,
+    title: "Diploma in Mechanical Engineering",
+    description: "Career paths with a Diploma in Mechanical Engineering",
+    avgSalary: 20,
+    totalLearners: 150,
+  },
+  {
+    id: 1423,
+    parentId: 142,
+    title: "Diploma in Civil Engineering",
+    description: "Career paths with a Diploma in Civil Engineering",
+    avgSalary: 20,
+    totalLearners: 130,
+  },
+
+  {
+    id: 15,
+    parentId: 1,
+    title: "Diploma & Technical Courses",
+    description: "Explore diploma and technical courses",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 151,
+    parentId: 15,
+    title: "Engineering (Diploma Path)",
+    description: "Engineering courses and specializations",
+    avgSalary: null,
+    totalLearners: null,
+  },
+  {
+    id: 1511,
+    parentId: 151,
+    title: "B.E/B.Tech",
+    description: "Bachelor of Engineering/Bachelor of Technology",
+    avgSalary: 35,
+    totalLearners: 600,
+  },
+  {
+    id: 15111,
+    parentId: 1511,
+    title: "Computer Science",
+    description: "Specializations in Computer Science",
+    avgSalary: 35,
+    totalLearners: 300,
+  },
+  //
+  //
+  //
+  {
+    id: 1121111,
+    parentId: 112111,
+    title: "Frontend Developer",
+    description:
+      "Specialize in frontend development technologies like HTML, CSS, and JavaScript.",
+    avgSalary: 35,
+    totalLearners: 500,
+    content: {
+      intro: {
+        knowledge: [
+          "HTML, CSS, JavaScript",
+          "Web design principles",
+          "Responsive design",
+          "User experience (UX) design",
+          "Version control systems (e.g., Git)",
+        ],
+        skills: [
+          "Basic Skills: understanding of front-end technologies",
+          "Problem Solving: identifying and fixing design issues",
+          "Reading work-related information",
+        ],
+        personalities: [
+          "Creativity",
+          "Attention to detail",
+          "Adaptability",
+          "Cooperation",
+          "Initiative",
+        ],
+        technology: [
+          "Web development frameworks (e.g., React, Angular, Vue.js)",
+          "CSS preprocessors (e.g., SASS, LESS)",
+          "Version control systems (e.g., Git)",
+          "Design tools (e.g., Adobe XD, Figma)",
+        ],
+        education_requirements: [
+          "Bachelor's degree in Computer Science or a related field",
+          "Certifications in front-end technologies",
+        ],
+        job_outlook: {
+          average_salary: "$75,000 per year",
+          growth_rate: "Above average",
+          new_job_opportunities: "Likely in the future",
+        },
+      },
+
+      roadmap: [
+        {
+          title: "Learn the Basics",
+          steps: [
+            "Understand HTML: Create and manipulate web page elements.",
+            "Learn CSS: Apply styles, work with layouts and responsive design.",
+            "Master JavaScript: Add interactivity and manipulate the DOM.",
+          ],
+        },
+        {
+          title: "Master Advanced Concepts",
+          steps: [
+            "CSS Frameworks: Learn frameworks like Bootstrap or Tailwind CSS.",
+            "JavaScript Frameworks: Get familiar with React, Vue.js, or Angular.",
+            "Responsive Design: Ensure your sites are mobile-friendly.",
+          ],
+        },
+        {
+          title: "Build Projects",
+          steps: [
+            "Create a Portfolio Website: Showcase your work.",
+            "Contribute to Open-Source: Gain real-world experience.",
+            "Develop Interactive Applications: Apply what you've learned.",
+          ],
+        },
+        {
+          title: "Optimize and Debug",
+          steps: [
+            "Use Browser Developer Tools: Debug and optimize performance.",
+            "Optimize Performance: Implement lazy loading and minification.",
+            "Ensure Cross-Browser Compatibility: Test and fix issues across different browsers.",
+          ],
+        },
+      ],
+      courseDuration: "6-12 months",
+      faqs: [
+        {
+          question:
+            "Do I need a design background to become a Frontend Developer?",
+          answer: "No, but understanding design principles is beneficial.",
+        },
+        {
+          question: "What are the most popular JavaScript frameworks?",
+          answer: "React, Vue.js, and Angular are widely used.",
+        },
+      ],
+      communityLink: "https://frontend-developers.community",
+      resources: [
+        {
+          title: "FreeCodeCamp - Responsive Web Design",
+          link: "https://www.freecodecamp.org/learn/responsive-web-design/",
+          rating: 4.3,
+        },
+        {
+          title: "Mozilla Developer Network (MDN)",
+          link: "https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer",
+          rating: 4.8,
+        },
+      ],
+    },
+  },
+  {
+    id: 1121112,
+    parentId: 112111,
+    title: "Backend Developer",
+    description:
+      "Specialize in backend technologies such as Node.js, Python, and databases.",
+    avgSalary: 35,
+    totalLearners: 400,
+    content: {
+      intro: {
+        knowledge: [
+          "Server-side programming languages (e.g., Python, Java, Ruby)",
+          "Database management (SQL, NoSQL)",
+          "APIs and RESTful services",
+          "Server management and deployment",
+          "Version control systems (e.g., Git)",
+        ],
+        skills: [
+          "Basic Skills: understanding of server-side technologies",
+          "Problem Solving: identifying and fixing server-related issues",
+          "Reading work-related information",
+        ],
+        personalities: [
+          "Logical thinking",
+          "Problem-solving",
+          "Attention to detail",
+          "Dependability",
+          "Persistence",
+        ],
+        technology: [
+          "Server-side frameworks (e.g., Node.js, Django, Spring)",
+          "Database management systems (e.g., MySQL, MongoDB)",
+          "Version control systems (e.g., Git)",
+          "Cloud services (e.g., AWS, Azure)",
+        ],
+        education_requirements: [
+          "Bachelor's degree in Computer Science or a related field",
+          "Certifications in back-end technologies",
+        ],
+        job_outlook: {
+          average_salary: "$85,000 per year",
+          growth_rate: "Above average",
+          new_job_opportunities: "Likely in the future",
+        },
+      },
+      roadmap: [
+        {
+          title: "Learn the Basics",
+          steps: [
+            "Choose a Language: Start with Node.js, Python, Ruby, or Java.",
+            "Data Structures and Algorithms: Understand key concepts.",
+            "HTTP and APIs: Learn about the HTTP protocol and how to build RESTful APIs.",
+          ],
+        },
+        {
+          title: "Master Advanced Concepts",
+          steps: [
+            "Database Management: Work with SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) databases.",
+            "Frameworks: Learn backend frameworks like Express.js, Django, or Ruby on Rails.",
+            "Authentication: Implement user authentication and authorization.",
+          ],
+        },
+        {
+          title: "Build Projects",
+          steps: [
+            "Develop Backend API: Create an API to interact with a database.",
+            "Frontend Integration: Connect your backend with a frontend application.",
+            "Deployment: Deploy your backend to a server or cloud service.",
+          ],
+        },
+        {
+          title: "Optimize and Secure",
+          steps: [
+            "Performance Optimization: Improve backend performance.",
+            "Security Practices: Implement security measures to protect against threats.",
+            "Monitoring and Logging: Set up monitoring and logging for your applications.",
+          ],
+        },
+      ],
+      courseDuration: "8-15 months",
+      faqs: [
+        {
+          question:
+            "Which programming language should I learn for backend development?",
+          answer: "Popular choices include Node.js, Python, Ruby, and Java.",
+        },
+        {
+          question: "What is the difference between SQL and NoSQL databases?",
+          answer:
+            "SQL databases are relational, while NoSQL databases are non-relational and better suited for unstructured data.",
+        },
+      ],
+      communityLink: "https://backend-developers.community",
+      resources: [
+        {
+          title:
+            "Udemy - Node.js, Express, MongoDB & More: The Complete Bootcamp",
+          link: "https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/",
+          rating: 4.4,
+        },
+        {
+          title: "Coursera - Web Application Technologies and Django",
+          link: "https://www.coursera.org/specializations/web-application-technologies",
+          rating: 4.8,
+        },
+      ],
+    },
+  },
+  {
+    id: 1121113,
+    parentId: 112111,
+    title: "Fullstack Developer",
+    description:
+      "Specialize in both frontend and backend technologies to build complete web applications.",
+    avgSalary: 35,
+    totalLearners: 350,
+    content: {
+      intro: {
+        knowledge: [
+          "HTML, CSS, JavaScript",
+          "Server-side programming languages (e.g., Python, Java, Ruby)",
+          "Database management",
+          "APIs and RESTful services",
+          "Version control systems (e.g., Git)",
+        ],
+        skills: [
+          "Basic Skills: understanding of both front-end and back-end technologies",
+          "Problem Solving: identifying and fixing issues across the entire stack",
+          "Reading work-related information",
+        ],
+        personalities: [
+          "Adaptability",
+          "Logical thinking",
+          "Problem-solving",
+          "Cooperation",
+          "Initiative",
+        ],
+        technology: [
+          "Full-stack frameworks (e.g., MEAN, MERN, LAMP)",
+          "Database management systems (e.g., MySQL, MongoDB)",
+          "Version control systems (e.g., Git)",
+          "Cloud services (e.g., AWS, Azure)",
+        ],
+        education_requirements: [
+          "Bachelor's degree in Computer Science or a related field",
+          "Certifications in full-stack development",
+        ],
+        job_outlook: {
+          average_salary: "$95,000 per year",
+          growth_rate: "Above average",
+          new_job_opportunities: "Highly likely in the future",
+        },
+      },
+      roadmap: [
+        {
+          title: "Learn Frontend and Backend Basics",
+          steps: [
+            "Frontend Basics: Learn HTML, CSS, and JavaScript.",
+            "Backend Basics: Learn a backend language like Node.js or Python.",
+            "Database Fundamentals: Understand relational and NoSQL databases.",
+          ],
+        },
+        {
+          title: "Master Fullstack Integration",
+          steps: [
+            "API Development: Build APIs to connect frontend and backend.",
+            "State Management: Learn state management libraries like Redux.",
+            "Authentication: Implement user authentication and authorization.",
+          ],
+        },
+        {
+          title: "Build and Deploy Projects",
+          steps: [
+            "Create a Fullstack Application: Develop a complete application with both frontend and backend.",
+            "Deployment: Deploy your fullstack application to a cloud service or server.",
+            "Monitor and Optimize: Implement monitoring and optimization practices.",
+          ],
+        },
+        {
+          title: "Stay Updated and Improve",
+          steps: [
+            "Learn New Technologies: Stay updated with new tools and frameworks.",
+            "Contribute to Open-Source: Gain experience and give back to the community.",
+            "Continue Learning: Take advanced courses and attend workshops.",
+          ],
+        },
+      ],
+      courseDuration: "12-18 months",
+      faqs: [
+        {
+          question:
+            "Do I need to master both frontend and backend to be a Fullstack Developer?",
+          answer:
+            "Yes, Fullstack Developers are expected to have a good grasp of both areas.",
+        },
+        {
+          question:
+            "Which stack is the most popular for Fullstack development?",
+          answer:
+            "The MERN stack (MongoDB, Express.js, React, Node.js) is widely used.",
+        },
+      ],
+      communityLink: "https://fullstack-developers.community",
+      resources: [
+        {
+          title: "Udemy - The Complete Web Developer in 2023: Zero to Mastery",
+          link: "https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/",
+          rating: 4.5,
+        },
+        {
+          title: "Coursera - Full-Stack Web Development with React",
+          link: "https://www.coursera.org/specializations/full-stack-react",
+          rating: 4.8,
+        },
+      ],
+    },
+  },
+  {
+    id: 1121114,
+    parentId: 112111,
+    title: "DevOps Engineer",
+    description:
+      "Focus on automating and integrating the processes between software development and IT teams.",
+    avgSalary: 35,
+    totalLearners: 300,
+    content: {
+      intro: {
+        knowledge: [
+          "Continuous Integration/Continuous Deployment (CI/CD)",
+          "Infrastructure as Code (IaC) tools (e.g., Terraform, Ansible)",
+          "Version control systems (e.g., Git)",
+          "Scripting languages (e.g., Python, Bash)",
+          "Cloud platforms (e.g., AWS, Azure, Google Cloud)",
+        ],
+        skills: [
+          "Basic Skills: understanding of DevOps principles and practices",
+          "Problem Solving: identifying and resolving deployment issues",
+          "Automation: automating repetitive tasks to improve efficiency",
+        ],
+        personalities: [
+          "Attention to detail",
+          "Collaboration",
+          "Problem-solving",
+          "Adaptability",
+          "Dependability",
+        ],
+        technology: [
+          "CI/CD tools (e.g., Jenkins, GitLab CI, CircleCI)",
+          "Containerization platforms (e.g., Docker, Kubernetes)",
+          "Monitoring tools (e.g., Prometheus, Grafana)",
+          "Cloud services (e.g., AWS, Azure, Google Cloud)",
+        ],
+        education_requirements: [
+          "Bachelor's degree in Computer Science, IT, or a related field",
+          "Certifications in DevOps, Cloud, or related technologies",
+        ],
+        job_outlook: {
+          average_salary: "$110,000 per year",
+          growth_rate: "Above average",
+          new_job_opportunities: "Highly likely in the future",
+        },
+      },
+      roadmap: [
+        {
+          title: "Learn the Basics",
+          steps: [
+            "Understand DevOps Concepts: Learn the principles of DevOps, including continuous integration and delivery.",
+            "Familiarize with Operating Systems: Gain proficiency in Unix/Linux systems.",
+            "Learn Scripting Languages: Master scripting for automation tasks.",
+          ],
+        },
+        {
+          title: "Master DevOps Tools",
+          steps: [
+            "Version Control: Use Git and GitHub for source code management.",
+            "CI/CD Tools: Understand Jenkins, GitLab CI/CD, or CircleCI.",
+            "Containerization: Work with Docker and Kubernetes.",
+            "Cloud Platforms: Get comfortable with AWS, Azure, or Google Cloud.",
+          ],
+        },
+        {
+          title: "Build and Automate",
+          steps: [
+            "Automate Deployment: Set up automated deployment pipelines.",
+            "Monitor and Troubleshoot: Implement monitoring solutions and logging.",
+          ],
+        },
+        {
+          title: "Optimize and Secure",
+          steps: [
+            "Performance Optimization: Enhance the efficiency of deployment pipelines.",
+            "Security Best Practices: Apply security practices to safeguard infrastructure.",
+          ],
+        },
+      ],
+      courseDuration: "10-16 months",
+      faqs: [
+        {
+          question: "What tools are essential for a DevOps Engineer?",
+          answer: "Popular tools include Docker, Kubernetes, Jenkins, and AWS.",
+        },
+        {
+          question: "How does DevOps differ from traditional IT operations?",
+          answer:
+            "DevOps focuses on collaboration, automation, and continuous delivery, whereas traditional IT operations are often more siloed and manual.",
+        },
+      ],
+      communityLink: "https://devops-engineers.community",
+      resources: [
+        {
+          title:
+            "Udemy - DevOps: CI/CD with Jenkins using Pipelines and Docker",
+          link: "https://www.udemy.com/course/jenkins-pipelines-docker/",
+          rating: 4.6,
+        },
+        {
+          title: "Coursera - Continuous Integration, Delivery, and DevOps",
+          link: "https://www.coursera.org/specializations/devops",
+          rating: 4.8,
+        },
+        {
+          title:
+            "Udemy - DevOps: CI/CD with Jenkins using Pipelines and Docker",
+          link: "https://www.udemy.com/course/jenkins-pipelines-docker/",
+          rating: 4.6,
+        },
+        {
+          title: "Coursera - Continuous Integration, Delivery, and DevOps",
+          link: "https://www.coursera.org/specializations/devops",
+          rating: 4.8,
+        },
+      ],
+    },
+  },
+];
+
+// module.exports = { data: main };
+export default main;
